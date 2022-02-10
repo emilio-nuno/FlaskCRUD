@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action='' method = "POST">
+        <label for="code">Código de Estudiante</label>
+        <input type="text" name="code" id="code" minlength="9"/>
+        <br>
+        <br>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"/>
+        <br>
+        <br>
+
+        <label for="age">Edad</label>
+        <input type="number" name="age" id="age"/>
+        <br>
+        <br>
+
+        <input type="submit" value="Agregar Registro" />
+    </form>
+    <a href="{{ url_for("index") }}">Volver a la página principal</a>
+{% endblock %}
